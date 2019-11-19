@@ -45,7 +45,7 @@ function Auth(config) {
     });
 
     // open the URL
-    console.log('Opening OAuth URL. Return here with your code.');
+    console.log('Opening OAuth URL. Return here with your code. If a browser does not open, copy/paste this in your browser:\n', url);
     open(url).catch(() => {
       console.log('Failed to automatically open the URL. Copy/paste this in your browser:\n', url);
     });
